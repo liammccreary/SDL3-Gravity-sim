@@ -19,7 +19,7 @@ const double FOFGRAV = 50.0f;
 const double RESTITUTION = 0.8;
 const double FRICTION_X = 0.995;
 const double DAMPING_COEF = 0.9f;
-const double FRICTION_BETW = 0.95f;
+const double FRICTION_BETW = 1.0f;
 
 double hue = 0.0;
 int ballCount = 0;
@@ -55,8 +55,8 @@ Ball makeBall(){
     b.vy = 0.0f;
 
     // Size and mass
-    b.radius = 30;
-    b.mass = 80000;     // simple mass model
+    b.radius = 20;
+    b.mass = 100000;     // simple mass model
 
     // Random color
     b.r = rand() % 256;
@@ -430,3 +430,4 @@ int main(void)
 
     return 0;
 }
+
